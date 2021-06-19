@@ -17,6 +17,9 @@ struct ContentView: View {
             }
             .digitalCrownRotation($crownValue)
             
+            // Goal is for this button to give focus to other button and start capturing
+            // digital crown changes; but have to touch this button twice to get desired
+            // effect
             Button("Enable Crown") {
                 print("Enabling crown")
                 forceFocus = true
